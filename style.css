@@ -944,6 +944,22 @@ button:focus-visible {
   gap: 24px;
 }
 
+.screenshot-grid-wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.preview-group + .preview-group {
+  margin-top: 30px;
+}
+
+.preview-group-title {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+}
+
 .shot {
   background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--border);
@@ -1360,6 +1376,10 @@ button:focus-visible {
   .pricing-card.featured {
     transform: none;
   }
+
+  .screenshot-grid-wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 920px) {
@@ -1494,6 +1514,14 @@ button:focus-visible {
 
   .footer-wrap {
     flex-direction: column;
+  }
+
+  .preview-group + .preview-group {
+    margin-top: 22px;
+  }
+
+  .preview-group-title {
+    font-size: 20px;
   }
 }
 
