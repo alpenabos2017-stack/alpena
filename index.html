@@ -3,12 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPENA | Aplikasi Persediaan & Aset Sekolah Offline untuk Laporan dan Administrasi</title>
     <meta
       name="description"
-      content="ALPENA adalah aplikasi penatausahaan persediaan dan aset sekolah berbasis desktop yang rapi, cepat, profesional, dan nyaman digunakan."
+      content="ALPENA adalah aplikasi desktop offline untuk persediaan dan aset sekolah. Kelola penerimaan, pengeluaran, stock opname, laporan, KIB, dan BMD dalam satu alur kerja. Tersedia demo gratis dan ALPENA Pro."
     />
-    <title>ALPENA - Aplikasi Penatausahaan Persediaan dan Aset Sekolah</title>
-
+    <link rel="canonical" href="https://alpenabos2017-stack.github.io/alpena/" />
+    <meta
+      property="og:title"
+      content="ALPENA | Aplikasi Persediaan & Aset Sekolah Offline"
+    />
+    <meta
+      property="og:description"
+      content="Kelola penerimaan, pengeluaran, stock opname, laporan, KIB, dan BMD dalam satu aplikasi desktop offline untuk sekolah. Tersedia demo gratis dan ALPENA Pro."
+    />
+    <meta
+      property="og:url"
+      content="https://alpenabos2017-stack.github.io/alpena/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://alpenabos2017-stack.github.io/alpena/assets/poster-alpena.png"
+    />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="ALPENA | Aplikasi Persediaan & Aset Sekolah Offline"
+    />
+    <meta
+      name="twitter:description"
+      content="Kelola penerimaan, pengeluaran, stock opname, laporan, KIB, dan BMD dalam satu aplikasi desktop offline untuk sekolah."
+    />
+    <meta
+      name="twitter:image"
+      content="https://alpenabos2017-stack.github.io/alpena/assets/poster-alpena.png"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,188 +58,769 @@
           </div>
         </a>
 
-        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          &#9776;
+        </button>
 
         <nav class="nav-links" id="navLinks">
           <a href="#fitur">Fitur</a>
           <a href="#preview">Preview</a>
+          <a href="#harga">Harga</a>
           <a href="#cara-mulai">Cara Mulai</a>
+          <a href="#spesifikasi">Spesifikasi</a>
           <a href="#download">Download</a>
           <a href="#kontak">Kontak</a>
-          <a href="#download" class="btn btn-primary">Download ALPENA</a>
+          <a href="#download" class="btn btn-primary btn-nav">Coba Demo Gratis</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <!-- HERO -->
-      <section class="hero">
+      <section class="hero hero-premium">
         <div class="container hero-grid">
-          <div>
+          <div class="hero-copy">
             <div class="hero-badge">
-              ALPENA Official v1.0 • Desktop Application
+              Desktop Application &bull; Offline &bull; Siap Uji Coba
             </div>
+
             <h1>
-              Solusi praktis penatausahaan persediaan dan aset sekolah yang
-              rapi, cepat, dan terasa resmi.
+              Kelola persediaan dan aset sekolah dengan lebih rapi, lebih
+              cepat, dan lebih siap saat laporan maupun pemeriksaan.
             </h1>
-            <p>
-              ALPENA dirancang untuk membantu sekolah mengelola penerimaan,
-              pengeluaran, stock opname, laporan, dan label inventaris dalam
-              satu aplikasi desktop yang nyaman digunakan setiap hari. Dan yang
-              paling penting, ALPENA sudah mengacu pada Permendagri No. 108
-              Tahun 2016 dan 47 Tahun 2021.
+
+            <p class="hero-desc">
+              ALPENA membantu operator sekolah mencatat penerimaan,
+              pengeluaran, stock opname, kartu persediaan, hingga laporan
+              administrasi dalam satu aplikasi desktop offline. Cocok untuk
+              sekolah yang ingin mengurangi file tercecer, pencatatan berulang,
+              dan pekerjaan laporan manual yang menyita waktu.
             </p>
 
             <div class="hero-actions">
-              <a href="#download" class="btn btn-primary">Download ALPENA</a>
-              <a href="#fitur" class="btn btn-secondary">Lihat Fitur</a>
+              <a href="#download" class="btn btn-primary">Coba Demo Gratis</a>
+              <a href="#harga" class="btn btn-secondary">Lihat Harga</a>
+              <a href="#preview" class="btn btn-outline-light">Lihat Preview</a>
             </div>
 
-            <div class="hero-stats">
-              <div class="hero-stat">
-                <strong>Offline</strong>
-                <span>Nyaman dipakai di sekolah</span>
+            <div class="hero-points">
+              <div class="hero-point">
+                &#10003; Satu alur kerja untuk pencatatan sampai laporan
               </div>
-              <div class="hero-stat">
-                <strong>Cepat</strong>
-                <span>Fokus pada efisiensi operator</span>
+              <div class="hero-point">
+                &#10003; Dirancang untuk operator, pengurus barang, dan sekolah
               </div>
-              <div class="hero-stat">
-                <strong>Profesional</strong>
-                <span>Tampilan modern dan resmi</span>
+              <div class="hero-point">
+                &#10003; Demo gratis sebelum aktivasi Pro
               </div>
+            </div>
+
+            <div class="hero-regulation">
+              <div class="hero-regulation-badge">Landasan Regulasi</div>
+              <p>
+                Format administrasi dirancang mengacu pada
+                <strong>Permendagri No. 108 Tahun 2016</strong> dan
+                <strong>No. 47 Tahun 2021</strong>.
+              </p>
+            </div>
+
+            <div class="hero-mini-note">
+              Dibangun dari kebutuhan nyata di lapangan agar administrasi tidak
+              berhenti di input data saja, tetapi benar-benar membantu sekolah
+              menyiapkan dokumen yang rapi dan siap dipakai.
             </div>
           </div>
 
-          <div class="hero-preview">
-            <div class="hero-preview-frame">
-              <img
-                src="assets/dashboard.png"
-                alt="Preview Dashboard ALPENA"
-                class="hero-preview-img"
-              />
+          <div class="hero-visual">
+            <div class="hero-visual-shell">
+              <div class="hero-screen-card">
+                <img
+                  src="assets/dashboard.png"
+                  alt="Preview Dashboard ALPENA"
+                  class="hero-screen"
+                />
+              </div>
+              <div class="hero-floating-badge badge-one">Siap Uji Coba</div>
+              <div class="hero-floating-badge badge-two">Offline Desktop</div>
             </div>
-            <div class="hero-preview-caption">
-              <span>Preview Aplikasi</span>
-              <strong>Dashboard ALPENA</strong>
+
+            <div class="hero-screen-caption">
+              Tampilan dashboard ALPENA yang rapi, jelas, dan nyaman digunakan.
             </div>
           </div>
         </div>
       </section>
 
-      <!-- POSTER -->
-      <section class="section section-soft">
+      <section class="section section-soft section-intro">
         <div class="container">
           <div class="section-title text-center">
             <span class="eyebrow">ALPENA Official</span>
             <h2>
-              Aplikasi Penatausahaan Persediaan dan Aset Sekolah Siap Digunakan
+              Bukan sekadar aplikasi pencatatan, tetapi alat kerja untuk
+              membantu sekolah menata administrasi barang dari awal sampai
+              output laporan
             </h2>
             <p>
-              Dirancang untuk operator sekolah agar administrasi barang lebih
-              rapi, cepat, dan profesional.
+              ALPENA dirancang untuk membantu sekolah mengurangi pekerjaan
+              berulang, memperjelas alur pencatatan, menata data barang dengan
+              lebih tertib, dan menyiapkan dokumen administrasi yang lebih siap
+              digunakan untuk kebutuhan operasional sehari-hari.
             </p>
           </div>
 
-          <div class="poster-wrapper">
+          <div class="poster-wrapper poster-wrapper-elevated">
             <img
               src="assets/poster-alpena.png"
               alt="Poster ALPENA"
               class="poster-img"
+              loading="lazy"
+              decoding="async"
             />
+          </div>
+
+          <div class="regulation-strip">
+            <span class="regulation-strip-label">Standar Operasional</span>
+            <p>
+              Format administrasi ALPENA disusun dengan mengacu pada
+              <strong>Permendagri No. 108 Tahun 2016</strong> dan
+              <strong>No. 47 Tahun 2021</strong>.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- FITUR -->
+      <section class="section" id="kenapa">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Kenapa ALPENA</span>
+            <h2>Dirancang untuk pekerjaan administrasi yang sering lambat, tercecer, dan berulang</h2>
+            <p>
+              Banyak sekolah masih mengerjakan pencatatan barang, rekap, dan
+              laporan melalui file terpisah yang sulit ditelusuri kembali.
+              ALPENA lahir untuk merapikan alur itu menjadi lebih runtut, lebih
+              mudah dipahami, dan lebih ringan dijalankan dalam pekerjaan
+              harian.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card">
+              <div class="why-icon">&#129533;</div>
+              <h3>Alur Kerja Lebih Jelas</h3>
+              <p>
+                Penerimaan, pengeluaran, stock opname, kartu persediaan, dan
+                laporan tersusun lebih runtut agar operator tidak perlu sering
+                berpindah file atau mengulang pencatatan.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128450;&#65039;</div>
+              <h3>Administrasi Lebih Rapi</h3>
+              <p>
+                Data barang, dokumen, dan output administrasi tersimpan lebih
+                tertib agar pencarian data, pengecekan mutasi, dan persiapan
+                pemeriksaan terasa lebih ringan.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128200;</div>
+              <h3>Siap Dipakai Operasional</h3>
+              <p>
+                ALPENA dirancang untuk kebutuhan riil sekolah, membantu
+                pekerjaan harian sekaligus menyiapkan output administrasi yang
+                memang dibutuhkan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="pengguna">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Cocok Untuk</span>
+            <h2>ALPENA cocok untuk pihak sekolah yang mengelola barang dan dokumen administrasi</h2>
+            <p>
+              Jika pekerjaan Anda berkaitan dengan pencatatan barang sekolah,
+              penyiapan rekap, atau pengecekan dokumen administrasi, ALPENA
+              dirancang untuk membantu pekerjaan tersebut menjadi lebih runtut
+              dan lebih mudah dilanjutkan.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card">
+              <div class="why-icon">&#128188;</div>
+              <h3>Operator Sekolah</h3>
+              <p>
+                Membantu mencatat transaksi barang, menata data, dan
+                menyiapkan administrasi harian dengan alur yang lebih
+                konsisten.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#127979;</div>
+              <h3>Pengurus Barang & Sarpras</h3>
+              <p>
+                Memudahkan pelacakan stok, mutasi, label inventaris, dan rekap
+                aset agar data lebih mudah ditinjau saat dibutuhkan.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128221;</div>
+              <h3>Pimpinan Sekolah</h3>
+              <p>
+                Membantu memastikan data dan dokumen administrasi lebih siap,
+                tertib, dan tidak terlalu bergantung pada pencarian file
+                manual.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="fitur">
         <div class="container">
           <div class="section-title">
             <span class="eyebrow">Fitur Utama</span>
-            <h2>
-              Fitur yang dibutuhkan sekolah, disusun dalam alur kerja yang mudah
-              dipahami
-            </h2>
+            <h2>Fitur inti untuk pekerjaan barang sekolah dari pencatatan sampai dokumen hasil</h2>
             <p>
-              ALPENA membantu operator bekerja lebih tertib, lebih cepat, dan
-              lebih nyaman tanpa harus berhadapan dengan tampilan yang rumit.
+              Setiap fitur di ALPENA dirancang untuk mengurangi pekerjaan
+              manual, memperjelas alur kerja, dan membantu pengguna
+              menghasilkan dokumen administrasi dengan lebih cepat dan lebih
+              tertib.
             </p>
           </div>
 
           <div class="feature-grid">
             <div class="card feature-card">
-              <div class="feature-icon">📦</div>
+              <div class="feature-icon">&#128230;</div>
               <h3>Penerimaan Barang</h3>
               <p>
-                Kelola dokumen penerimaan, rincian barang, dan pencatatan stok
-                masuk dengan tampilan yang rapi dan terstruktur.
+                Catat dokumen penerimaan, rincian barang, dan stok masuk dengan
+                alur yang lebih terstruktur agar data awal lebih rapi sejak
+                proses input.
               </p>
             </div>
 
             <div class="card feature-card">
-              <div class="feature-icon">📤</div>
+              <div class="feature-icon">&#128228;</div>
               <h3>Pengeluaran Barang</h3>
               <p>
-                Catat distribusi dan penggunaan barang dengan kontrol periode
-                yang jelas serta keterkaitan langsung ke stok tersedia.
+                Kelola distribusi dan penggunaan barang dengan kontrol periode
+                yang jelas agar mutasi barang mudah ditelusuri dan stok tetap
+                terpantau.
               </p>
             </div>
 
             <div class="card feature-card">
-              <div class="feature-icon">📊</div>
+              <div class="feature-icon">&#128202;</div>
               <h3>Laporan Otomatis</h3>
               <p>
-                Hasilkan laporan operasional dan dokumen pendukung yang siap
-                dipakai untuk kebutuhan administrasi sekolah.
+                Susun laporan operasional dan dokumen pendukung dengan format
+                yang lebih rapi agar penyusunan laporan jauh lebih ringan
+                dibanding membuat ulang secara manual.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#127991;&#65039;</div>
+              <h3>Label Inventaris</h3>
+              <p>
+                Cetak label barang inventaris secara lebih rapi dan konsisten
+                untuk membantu identifikasi aset di lapangan.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128451;&#65039;</div>
+              <h3>Kartu & Rekap</h3>
+              <p>
+                Mendukung kartu persediaan, rekap administrasi, dan pelacakan
+                mutasi barang agar pemeriksaan data tidak bergantung pada file
+                yang tersebar.
+              </p>
+            </div>
+
+            <div class="card feature-card feature-card-regulasi">
+              <div class="feature-icon">&#128216;</div>
+              <h3>Sesuai Permendagri</h3>
+              <p>
+                Format administrasi dirancang mengacu pada Permendagri No. 108
+                Tahun 2016 dan No. 47 Tahun 2021 agar lebih relevan dengan
+                kebutuhan dokumen sekolah.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128216;</div>
+              <h3>Sampul Laporan Otomatis</h3>
+              <p>
+                Membantu menyiapkan sampul berbagai jenis laporan agar dokumen
+                lebih rapi, formal, dan tidak perlu sering dibuat ulang di luar
+                aplikasi.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128209;</div>
+              <h3>Rekap KIB & BMD</h3>
+              <p>
+                Mendukung kebutuhan rekap KIB B Intrakomptable, KIB B
+                Ekstrakomptable, KIB E, serta rekap BMD untuk administrasi aset
+                sekolah yang lebih tertib dan lebih mudah ditinjau ulang.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128215;</div>
+              <h3>Dokumen Excel Rekonsiliasi</h3>
+              <p>
+                Membantu menyiapkan dokumen Excel untuk kebutuhan rekonsiliasi
+                secara lebih rapi dan praktis tanpa banyak menyusun ulang
+                dokumen pendukung dari awal.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PREVIEW -->
       <section class="section" id="preview">
         <div class="container">
           <div class="section-title">
-            <span class="eyebrow">Preview</span>
-            <h2>Lihat tampilan ALPENA secara langsung</h2>
+            <span class="eyebrow">Preview Aplikasi</span>
+            <h2>Lihat tampilan aplikasi sebelum mencoba versi demo</h2>
             <p>
-              Screenshot asli aplikasi membantu calon pengguna memahami bahwa
-              ALPENA bukan konsep, tetapi produk yang benar-benar siap
-              digunakan.
+              Screenshot berikut diambil langsung dari aplikasi ALPENA agar
+              calon pengguna bisa menilai tampilan, struktur menu, dan alur
+              kerjanya sejak awal.
             </p>
           </div>
 
           <div class="screenshot-grid">
             <div class="shot">
-              <div class="shot-preview" id="shot1Preview">Dashboard</div>
-              <p>Dashboard yang informatif dan mudah dibaca</p>
+              <div class="shot-preview" id="shot1Preview">
+                <img
+                  src="assets/dashboard.png"
+                  alt="Preview Dashboard ALPENA"
+                  class="hero-screen"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p>Dashboard ringkas untuk melihat data dan aktivitas utama</p>
             </div>
+
             <div class="shot">
-              <div class="shot-preview" id="shot2Preview">Penerimaan</div>
-              <p>Halaman penerimaan dengan struktur tabel profesional</p>
+              <div class="shot-preview" id="shot2Preview">
+                <img
+                  src="assets/penerimaan.png"
+                  alt="Preview Penerimaan ALPENA"
+                  class="hero-screen"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p>Halaman penerimaan dengan alur input yang jelas</p>
             </div>
+
             <div class="shot">
-              <div class="shot-preview" id="shot3Preview">Pengeluaran</div>
-              <p>Halaman pengeluaran yang konsisten dan efisien</p>
+              <div class="shot-preview" id="shot3Preview">
+                <img
+                  src="assets/pengeluaran.png"
+                  alt="Preview Pengeluaran ALPENA"
+                  class="hero-screen"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p>Halaman pengeluaran yang konsisten dan efisien digunakan</p>
             </div>
+
             <div class="shot">
-              <div class="shot-preview" id="shot4Preview">Laporan</div>
-              <p>Laporan dan output cetak untuk kebutuhan administrasi</p>
+              <div class="shot-preview shot-preview-text" id="shot4Preview">
+                <img
+                  src="assets/laporan.png"
+                  alt="Preview laporan ALPENA"
+                  class="hero-screen"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p>Output laporan yang siap dipakai untuk administrasi sekolah</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-soft" id="cara-mulai">
+      <section class="section section-soft" id="output">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Hasil Kerja</span>
+            <h2>Bukan hanya fitur, tetapi hasil administrasi yang lebih siap dipakai</h2>
+            <p>
+              ALPENA membantu sekolah menghasilkan dokumen dan keluaran
+              administrasi yang lebih siap dipakai, bukan hanya menyimpan data
+              transaksi.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <div class="card feature-card">
+              <div class="feature-icon">&#128196;</div>
+              <h3>Buku Penerimaan & Pengeluaran</h3>
+              <p>
+                Menyiapkan buku penerimaan barang pakai habis dan buku
+                pengeluaran barang pakai habis untuk kebutuhan administrasi
+                operasional sekolah.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128203;</div>
+              <h3>Buku Persediaan & Kartu Persediaan</h3>
+              <p>
+                Menyediakan buku persediaan dan kartu persediaan barang agar
+                pengecekan sisa barang, mutasi, dan riwayat data lebih mudah.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#127991;&#65039;</div>
+              <h3>Label Inventaris</h3>
+              <p>
+                Cetak label terpilih maupun semua label inventaris agar aset
+                sekolah lebih mudah diidentifikasi di lapangan.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128209;</div>
+              <h3>Rekapitulasi Persediaan, KIB, & BMD</h3>
+              <p>
+                Mendukung rekapitulasi persediaan SKPD, KIB B
+                Intrakomptable, KIB B Ekstrakomptable, KIB E, serta rekap
+                barang inventaris BMD.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128210;</div>
+              <h3>Sampul & Dokumen Pendukung</h3>
+              <p>
+                Menyiapkan sampul laporan dan dokumen pendukung agar hasil
+                administrasi terlihat lebih formal, rapi, dan siap digunakan.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128187;</div>
+              <h3>Export PDF & Excel</h3>
+              <p>
+                Hasil administrasi dapat dicetak dalam PDF maupun diekspor ke
+                Excel untuk kebutuhan rekap, arsip, atau dokumen pendukung
+                lanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kemudahan">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Mudah Dipakai</span>
+            <h2>Mulai bekerja tanpa setup teknis yang rumit</h2>
+            <p>
+              Proses awalnya disederhanakan agar sekolah bisa lebih cepat fokus
+              ke pekerjaan administrasi, bukan ke konfigurasi sistem.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card">
+              <div class="why-icon">&#128230;</div>
+              <h3>Installer Sudah Siap Pakai</h3>
+              <p>
+                ALPENA disediakan dalam paket installer sehingga pengguna tidak
+                perlu menyiapkan database manual sebelum mulai menggunakan
+                aplikasi.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#9881;&#65039;</div>
+              <h3>Tanpa XAMPP atau Setup Tambahan</h3>
+              <p>
+                Pengguna tidak perlu menginstal XAMPP, Apache, PHP, atau MySQL
+                secara terpisah. Kebutuhan dasar sistem sudah disiapkan secara
+                internal.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128214;</div>
+              <h3>Panduan Operasional Sudah Tersedia</h3>
+              <p>
+                Ada panduan penggunaan yang membantu admin dan operator
+                memahami instalasi, login, data dasar, transaksi, laporan, dan
+                pemeliharaan sistem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="kepercayaan">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Alasan Percaya</span>
+            <h2>Calon pengguna bisa menilai sendiri sebelum membeli</h2>
+            <p>
+              Calon pengguna bisa mencoba demo, membuka panduan, dan
+              menghubungi pengembang langsung sebelum memutuskan aktivasi.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card">
+              <div class="why-icon">&#128190;</div>
+              <h3>Demo Bisa Dicoba Langsung</h3>
+              <p>
+                Sekolah dapat melihat alur kerja, menu, dan tampilan aplikasi
+                lebih dulu sebelum mengambil keputusan aktivasi.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128196;</div>
+              <h3>Panduan Mudah Diakses</h3>
+              <p>
+                File panduan PDF dan tutorial tambahan membantu calon pengguna
+                memahami instalasi maupun alur penggunaan dengan lebih terarah.
+              </p>
+            </div>
+
+            <div class="card why-card">
+              <div class="why-icon">&#128222;</div>
+              <h3>Kontak Resmi Tersedia</h3>
+              <p>
+                Jika ada pertanyaan sebelum mencoba atau saat aktivasi, sekolah
+                dapat langsung menghubungi pengembang melalui WhatsApp atau
+                email resmi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kontrol-operasional">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Kontrol Operasional</span>
+            <h2>Bukan hanya input dan laporan, tetapi juga kontrol kerja yang lebih matang</h2>
+            <p>
+              Ada fitur administratif dan pengendalian sistem yang membuat
+              ALPENA lebih siap untuk penggunaan riil di sekolah.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <div class="card feature-card">
+              <div class="feature-icon">&#128274;</div>
+              <h3>Hak Akses Admin & Operator</h3>
+              <p>
+                Pembagian peran pengguna membantu sekolah membedakan fungsi
+                operasional harian dan fungsi pengendalian sistem.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128451;&#65039;</div>
+              <h3>Tutup Bulan</h3>
+              <p>
+                Membantu menjaga ketertiban periode kerja agar data transaksi
+                lebih terkontrol sesuai alur administrasi yang berjalan.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128190;</div>
+              <h3>Backup & Restore Data</h3>
+              <p>
+                Sekolah memiliki jalur pengamanan data yang lebih baik melalui
+                backup database dan proses pemulihan saat diperlukan.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128273;</div>
+              <h3>Recovery Admin</h3>
+              <p>
+                Tersedia mekanisme recovery key admin dan bantuan pengembang
+                untuk pemulihan akses apabila terjadi kendala pada akun admin.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128197;</div>
+              <h3>Lisensi Tahun Anggaran</h3>
+              <p>
+                Pengelolaan lisensi mengikuti kebutuhan sekolah, perangkat, dan
+                tahun anggaran yang dipakai dalam operasional aplikasi.
+              </p>
+            </div>
+
+            <div class="card feature-card">
+              <div class="feature-icon">&#128240;</div>
+              <h3>Histori Multi Tahun</h3>
+              <p>
+                Data tahun berjalan dan tahun arsip lebih mudah ditinjau untuk
+                menjaga kesinambungan administrasi antar tahun anggaran.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft pricing-section" id="harga">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Harga & Lisensi</span>
+            <h2>Transparan, sederhana, dan mudah dipahami</h2>
+            <p>
+              ALPENA tersedia dalam versi demo gratis untuk uji coba, serta
+              versi Pro untuk penggunaan operasional penuh di sekolah. Versi
+              demo membantu sekolah menilai kecocokan alur kerjanya, sedangkan
+              versi Pro disiapkan untuk penggunaan harian dengan keluaran
+              administrasi yang lebih lengkap dan kontrol operasional yang
+              lebih matang.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <div class="pricing-card pricing-card-demo">
+              <div class="pricing-top">
+                <div class="pricing-badge">Gratis</div>
+                <h3>Versi Demo</h3>
+                <p>
+                  Cocok untuk melihat tampilan, mengenal alur kerja, dan
+                  menilai kecocokannya dengan kebutuhan sekolah sebelum
+                  aktivasi versi penuh.
+                </p>
+              </div>
+
+              <div class="pricing-price">
+                <strong>Rp 0</strong>
+                <span>untuk uji coba</span>
+              </div>
+
+              <ul class="pricing-list">
+                <li>&#10003; Bisa dicoba sebelum membeli</li>
+                <li>&#10003; Tampilan dan alur kerja asli aplikasi</li>
+                <li>&#10003; Fitur dibatasi untuk keperluan demonstrasi</li>
+                <li>&#10003; Cocok untuk pengenalan awal</li>
+              </ul>
+
+              <div class="pricing-actions">
+                <a href="#download" class="btn btn-outline btn-block">
+                  Coba Demo Gratis
+                </a>
+              </div>
+            </div>
+
+            <div class="pricing-card pricing-card-pro featured">
+              <div class="pricing-ribbon">Direkomendasikan</div>
+
+              <div class="pricing-top">
+                <div class="pricing-badge pricing-badge-accent">
+                  Promo Perkenalan
+                </div>
+
+                <h3>ALPENA Pro</h3>
+
+                <p>
+                  Untuk sekolah yang ingin menggunakan ALPENA secara penuh dalam
+                  administrasi persediaan dan aset. Cocok untuk operasional
+                  harian yang lebih rapi, tertib, dan lebih siap untuk
+                  kebutuhan laporan serta dokumen pendukung.
+                </p>
+              </div>
+
+              <div class="pricing-price pricing-price-pro">
+                <div class="price-old">Rp 1.700.000</div>
+
+                <div class="price-promo-label">
+                  Promo launching 30 sekolah pertama
+                </div>
+
+                <strong>Rp 500.000</strong>
+                <span>aktivasi awal 1 tahun</span>
+
+                <small class="price-note">
+                  Termasuk aktivasi penggunaan, fitur penuh yang tersedia pada
+                  versi Pro, dan dukungan penggunaan.
+                </small>
+              </div>
+
+              <ul class="pricing-list">
+                <li>&#10003; Lisensi resmi untuk 1 sekolah pada 1 komputer</li>
+                <li>&#10003; Aktivasi awal untuk 1 tahun anggaran</li>
+                <li>&#10003; Fitur Pro untuk penggunaan operasional penuh</li>
+                <li>&#10003; Format administrasi mengacu pada Permendagri</li>
+                <li>
+                  &#10003; Dukungan laporan, sampul, dan output administrasi
+                </li>
+                <li>&#10003; Dukungan label inventaris dan aset</li>
+                <li>&#10003; Dukungan backup data dan histori multi tahun</li>
+                <li>&#10003; Aplikasi desktop offline</li>
+                <li>&#10003; Tanpa biaya bulanan</li>
+                <li>&#10003; Dukungan & update selama masa aktivasi</li>
+              </ul>
+
+              <div class="pricing-renew">
+                <strong>Perpanjangan tahunan:</strong> Rp 350.000 / tahun
+              </div>
+
+              <div class="pricing-actions">
+                <a
+                  href="https://wa.me/6283165155005"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-block"
+                >
+                  Aktivasi ALPENA Pro
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-note-block">
+            Jika sekolah masih ingin memastikan kecocokan alur kerja, mulai
+            dari <strong>Versi Demo</strong>. Jika sudah siap dipakai untuk
+            operasional dan kebutuhan dokumen yang lebih lengkap, lanjutkan ke
+            <strong>ALPENA Pro</strong>.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cara-mulai">
         <div class="container">
           <div class="section-title">
             <span class="eyebrow">Cara Mulai</span>
-            <h2>Mulai gunakan ALPENA dalam 4 langkah sederhana</h2>
+            <h2>Mulai gunakan ALPENA dalam beberapa langkah</h2>
             <p>
-              Dari download hingga aktivasi, alurnya dibuat singkat dan mudah
-              dipahami oleh sekolah.
+              Sekolah bisa mencoba lebih dulu, lalu melanjutkan ke aktivasi saat
+              merasa alur kerjanya memang membantu pekerjaan administrasi.
             </p>
           </div>
 
@@ -213,81 +828,295 @@
             <div class="step-card">
               <div class="step-number">1</div>
               <h3>Download Installer</h3>
-              <p>Unduh file installer ALPENA dari halaman resmi ini.</p>
+              <p>
+                Unduh versi demo ALPENA dari halaman resmi ini, lalu buka
+                panduan PDF jika ingin mengikuti langkah penggunaan dengan lebih
+                terarah.
+              </p>
             </div>
 
             <div class="step-card">
               <div class="step-number">2</div>
               <h3>Install di Perangkat</h3>
               <p>
-                Lakukan instalasi di komputer atau laptop sekolah seperti
-                aplikasi desktop pada umumnya.
+                Pasang ALPENA di komputer atau laptop sekolah melalui installer
+                yang sudah disiapkan tanpa perlu setup database manual atau
+                instal komponen server tambahan.
               </p>
             </div>
 
             <div class="step-card">
               <div class="step-number">3</div>
-              <h3>Isi Identitas Sekolah</h3>
+              <h3>Coba & Kenali Fitur</h3>
               <p>
-                Lengkapi identitas sekolah untuk kebutuhan aktivasi aplikasi.
+                Gunakan versi demo untuk melihat apakah pencatatan, menu, dan
+                hasil administrasinya cocok dengan kebutuhan sekolah.
               </p>
             </div>
 
             <div class="step-card">
               <div class="step-number">4</div>
-              <h3>Aktivasi dan Gunakan</h3>
+              <h3>Aktivasi Versi Pro</h3>
               <p>
-                Setelah aktif, ALPENA siap dipakai untuk operasional persediaan
-                sekolah.
+                Jika sesuai kebutuhan, lanjutkan ke aktivasi ALPENA Pro untuk
+                menggunakan fitur penuh, kontrol operasional, dan keluaran
+                administrasi yang lebih lengkap.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- DOWNLOAD -->
+      <section class="section section-soft" id="spesifikasi">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Spesifikasi Minimal</span>
+            <h2>Perangkat yang bisa digunakan untuk memasang ALPENA</h2>
+            <p>
+              ALPENA dirancang sebagai aplikasi desktop Windows yang dapat
+              digunakan di laptop atau komputer sekolah dengan kebutuhan
+              perangkat yang ringan dan umum dijumpai, dengan instalasi yang
+              praktis tanpa setup teknis tambahan.
+            </p>
+          </div>
+
+          <div class="spec-grid">
+            <div class="card spec-card">
+              <h3>Spesifikasi Minimal</h3>
+              <ul class="spec-list">
+                <li><strong>Sistem Operasi:</strong> Windows 10 atau Windows 11</li>
+                <li><strong>Prosesor:</strong> Dual-core 64-bit</li>
+                <li><strong>RAM:</strong> Minimal 4 GB</li>
+                <li>
+                  <strong>Ruang Penyimpanan:</strong> Minimal 10 GB kosong untuk
+                  instalasi dan data awal
+                </li>
+                <li>
+                  <strong>Layar:</strong> Resolusi minimal 1366 x 768
+                </li>
+              </ul>
+            </div>
+
+            <div class="card spec-card">
+              <h3>Disarankan Agar Lebih Nyaman</h3>
+              <ul class="spec-list">
+                <li><strong>RAM:</strong> 8 GB atau lebih</li>
+                <li><strong>Penyimpanan:</strong> SSD</li>
+                <li><strong>Ruang Kosong:</strong> 5 GB atau lebih</li>
+                <li><strong>Layar:</strong> Full HD 1920 x 1080</li>
+                <li>
+                  <strong>Penggunaan:</strong> Cocok untuk operasional harian
+                  dengan data yang terus bertambah
+                </li>
+              </ul>
+            </div>
+
+            <div class="card spec-card">
+              <h3>Kebutuhan Tambahan</h3>
+              <ul class="spec-list">
+                <li>
+                  <strong>Hak Akses Instalasi:</strong> Diperlukan agar aplikasi
+                  dapat dipasang di Windows
+                </li>
+                <li>
+                  <strong>Setup Teknis Tambahan:</strong> Tidak perlu XAMPP,
+                  Apache, PHP, atau MySQL terpisah
+                </li>
+                <li>
+                  <strong>Printer:</strong> Jika ingin mencetak laporan, label,
+                  atau dokumen administrasi
+                </li>
+                <li>
+                  <strong>Microsoft Excel:</strong> Jika diperlukan untuk dokumen
+                  pendukung atau hasil ekspor
+                </li>
+                <li>
+                  <strong>PDF Reader:</strong> Untuk membuka laporan dalam format
+                  PDF
+                </li>
+                <li>
+                  <strong>Internet:</strong> Tidak wajib untuk operasional
+                  harian, tetapi disarankan saat download, aktivasi, atau
+                  bantuan penggunaan
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pricing-note-block spec-note">
+            Jika sekolah ingin memastikan kesiapan perangkat sebelum instalasi,
+            silakan konsultasikan melalui WhatsApp resmi ALPENA.
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="download">
         <div class="container">
           <div class="section-title">
             <span class="eyebrow">Download</span>
-            <h2>Download Installer Resmi ALPENA</h2>
+            <h2>Coba versi demo ALPENA dan nilai kecocokannya untuk sekolah</h2>
             <p>
-              Unduh ALPENA dan mulai gunakan untuk pengelolaan persediaan
-              sekolah dengan tampilan profesional dan alur kerja yang rapi.
+              Unduh demo resmi, buka panduan PDF, lalu lanjutkan konsultasi jika
+              ingin memastikan instalasi atau menilai alur kerja sebelum
+              aktivasi versi Pro.
             </p>
           </div>
 
           <div class="download-card">
             <div class="download-left">
-              <h3>ALPENA v1.0 Official</h3>
+              <h3>Mulai dari Demo Resmi ALPENA</h3>
+
               <ul class="download-meta">
-                <li>✔ Windows 10 / 11</li>
-                <li>✔ Desktop Offline Application</li>
-                <li>✔ Installer Siap Pakai</li>
-                <li>✔ Support Aktivasi Resmi</li>
+                <li>&#10003; Windows Desktop Application</li>
+                <li>&#10003; Offline dan nyaman digunakan</li>
+                <li>&#10003; Cocok untuk menilai alur kerja sebelum aktivasi</li>
+                <li>
+                  &#10003; Didukung panduan PDF dan kontak bantuan resmi
+                </li>
               </ul>
 
+              <div class="download-regulation-note">
+                Format administrasi mengacu pada
+                <strong>Permendagri No. 108 Tahun 2016</strong> dan
+                <strong>No. 47 Tahun 2021</strong>.
+              </div>
+
               <div class="download-buttons">
-                <a
-                  id="downloadButton"
-                  href="https://drive.google.com/uc?export=download&id=1fAjp_8tYbTWs1ibh-VR_UiEAuQ4Vpfeq"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-lg"
-                >
-                  Download Installer
+                <a id="downloadButton" href="#" class="btn btn-primary btn-lg">
+                  Download Demo Gratis
                 </a>
 
-                <a href="#cara-mulai" class="btn btn-outline btn-lg">
-                  Cara Install
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1FQIj6nYtzxDPCxWDe8pL43XNWmFwhraK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-lg"
+                >
+                  Unduh Panduan PDF
+                </a>
+
+                <a href="#harga" class="btn btn-outline btn-lg">
+                  Lihat Harga Pro
                 </a>
               </div>
+
+              <p id="downloadHelperText" class="download-helper-text">
+                Gunakan tombol utama untuk mengunduh demo. Jika ingin melihat
+                detail file terlebih dahulu atau membutuhkan bantuan saat
+                instalasi, gunakan tautan pendukung dan kontak resmi yang
+                tersedia di halaman ini.
+              </p>
+
+              <a
+                id="downloadDetailLink"
+                href="https://drive.google.com/file/d/1qdt16Ci-Jvi9Pcvp3irxWtlHuQpaUWlO/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="download-detail-link"
+              >
+                Lihat Detail File
+              </a>
             </div>
 
             <div class="download-right">
-              <div class="download-badge">v1.0</div>
+              <div class="download-badge">Demo</div>
               <div class="download-platform">Windows Desktop</div>
-              <div class="download-size">File Installer</div>
+              <div class="download-size">Installer Siap Coba</div>
+              <p class="download-side-note">
+                Cocok untuk mengenal tampilan, menu, dan logika kerja ALPENA
+                sebelum sekolah memutuskan aktivasi versi penuh.
+              </p>
+              <a
+                href="https://wa.me/6283165155005"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline btn-block"
+              >
+                Tanya Sebelum Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="faq">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">FAQ Singkat</span>
+            <h2>Pertanyaan yang sering ditanyakan</h2>
+            <p>
+              Beberapa pertanyaan yang biasanya muncul sebelum sekolah mencoba
+              demo atau melanjutkan aktivasi ALPENA Pro.
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            <div class="card faq-card">
+              <h3>Apakah ALPENA harus selalu online?</h3>
+              <p>
+                Tidak. ALPENA dirancang sebagai aplikasi desktop offline dan
+                nyaman digunakan tanpa koneksi internet saat operasional.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Apakah tersedia versi demo?</h3>
+              <p>
+                Ya. Versi demo tersedia agar sekolah dapat mencoba aplikasi
+                terlebih dahulu, menilai alur kerjanya, lalu memutuskan apakah
+                ALPENA sesuai untuk penggunaan operasional.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Bagaimana sistem lisensinya?</h3>
+              <p>
+                Lisensi ALPENA berlaku per sekolah dengan aktivasi awal dan
+                perpanjangan tahunan.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Apakah bisa digunakan lintas jenjang?</h3>
+              <p>
+                Ya. ALPENA dirancang fleksibel untuk kebutuhan sekolah dan
+                madrasah lintas jenjang.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Apa perbedaan Demo dan Pro?</h3>
+              <p>
+                Versi Demo digunakan untuk melihat tampilan dan mengenal alur
+                kerja aplikasi, sedangkan versi Pro ditujukan untuk penggunaan
+                operasional penuh dengan keluaran administrasi yang lebih
+                lengkap sesuai kebutuhan sekolah.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Bagaimana proses aktivasinya?</h3>
+              <p>
+                Setelah sekolah merasa cocok, aktivasi ALPENA Pro dapat
+                dilanjutkan melalui kontak resmi untuk panduan penggunaan dan
+                proses aktivasi.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Apakah ada bantuan instalasi dan penggunaan?</h3>
+              <p>
+                Ya. Dukungan instalasi, konsultasi awal, dan bantuan penggunaan
+                tersedia melalui WhatsApp selama masa aktivasi.
+              </p>
+            </div>
+
+            <div class="card faq-card">
+              <h3>Di perangkat seperti apa ALPENA digunakan?</h3>
+              <p>
+                ALPENA disiapkan sebagai aplikasi desktop Windows untuk
+                digunakan di komputer atau laptop sekolah.
+              </p>
             </div>
           </div>
         </div>
@@ -299,18 +1128,19 @@
             <span class="eyebrow">Kontak</span>
             <h2>Hubungi Pengembang ALPENA</h2>
             <p>
-              Gunakan kontak berikut untuk konsultasi, aktivasi, dan melihat
-              panduan penggunaan ALPENA dengan lebih mudah.
+              Untuk konsultasi kebutuhan sekolah, bantuan instalasi, aktivasi,
+              atau pertanyaan penggunaan, silakan hubungi melalui kontak
+              berikut.
             </p>
           </div>
 
           <div class="contact-grid">
             <div class="card contact-card">
-              <div class="contact-icon">💬</div>
+              <div class="contact-icon">&#128172;</div>
               <h3>WhatsApp</h3>
               <p>
-                Konsultasi cepat, bantuan instalasi, serta informasi penggunaan
-                ALPENA.
+                Konsultasi cepat, bantuan instalasi, informasi demo, dan
+                aktivasi ALPENA Pro.
               </p>
               <a
                 href="https://wa.me/6283165155005"
@@ -318,16 +1148,16 @@
                 rel="noopener noreferrer"
                 class="btn btn-primary"
               >
-                Chat WhatsApp
+                Konsultasi via WhatsApp
               </a>
             </div>
 
             <div class="card contact-card">
-              <div class="contact-icon">✉️</div>
+              <div class="contact-icon">&#9993;&#65039;</div>
               <h3>Email</h3>
               <p>
                 Untuk komunikasi resmi, aktivasi aplikasi, dan kebutuhan
-                administrasi sekolah.
+                administrasi lainnya.
               </p>
               <a href="mailto:alpenabos2017@gmail.com" class="btn btn-outline">
                 Kirim Email
@@ -335,11 +1165,10 @@
             </div>
 
             <div class="card contact-card">
-              <div class="contact-icon">▶️</div>
+              <div class="contact-icon">&#9654;&#65039;</div>
               <h3>Tutorial YouTube</h3>
               <p>
-                Lihat panduan penggunaan ALPENA secara lengkap melalui channel
-                YouTube resmi.
+                Lihat panduan penggunaan ALPENA melalui channel YouTube resmi.
               </p>
               <a
                 href="https://www.youtube.com/c/jaljoltipi"
@@ -347,7 +1176,7 @@
                 rel="noopener noreferrer"
                 class="btn btn-outline"
               >
-                Buka Channel
+                Lihat Tutorial
               </a>
             </div>
           </div>
@@ -358,10 +1187,10 @@
     <footer class="site-footer">
       <div class="container footer-wrap">
         <div>
-          © <span id="yearNow"></span> ALPENA<br />
+          &copy; <span id="yearNow"></span> ALPENA<br />
           <small>
             Dikembangkan oleh <strong>Kindi Ibnu Rohim</strong><br />
-            Pengembang ALPENA<br />
+            Pengembang Aplikasi ALPENA<br />
             Pandeglang - Banten
           </small>
         </div>
@@ -369,8 +1198,8 @@
         <div>
           Aplikasi Penatausahaan Persediaan & Aset Sekolah<br />
           <small>
-            Support langsung oleh developer<br />
-            Built with ❤ in Indonesia
+            Versi demo tersedia gratis &bull; Lisensi sekolah tersedia<br />
+            Built with &hearts; in Indonesia
           </small>
         </div>
       </div>
