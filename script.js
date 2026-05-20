@@ -2,8 +2,8 @@
 // MOBILE MENU
 // ================================
 const DOWNLOAD_URL =
-  "https://drive.google.com/uc?export=download&id=1qdt16Ci-Jvi9Pcvp3irxWtlHuQpaUWlO";
-const DOWNLOAD_FALLBACK_URL = "https://wa.me/6283165155005";
+  "https://drive.google.com/file/d/1KYjXpWfuLpC5SSRADwwYXgRbrvkhEVOQ/view?usp=sharing";
+const DOWNLOAD_FALLBACK_URL = "https://wa.me/6285882220910";
 
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const navLinks = document.getElementById("navLinks");
