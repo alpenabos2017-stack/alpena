@@ -74,9 +74,10 @@
           <a href="#harga">Harga</a>
           <a href="#cara-mulai">Cara Mulai</a>
           <a href="#spesifikasi">Spesifikasi</a>
+          <a href="#order-nota">Buat Nota</a>
           <a href="#download">Download</a>
           <a href="#kontak">Kontak</a>
-          <a href="#download" class="btn btn-primary btn-nav">Coba Demo Gratis</a>
+          <a href="#order-nota" class="btn btn-primary btn-nav">Buat Nota</a>
         </nav>
       </div>
     </header>
@@ -103,7 +104,7 @@
             </p>
 
             <div class="hero-actions">
-              <a href="#download" class="btn btn-primary">Coba Demo Gratis</a>
+              <a href="#order-nota" class="btn btn-primary">Buat Nota</a>
               <a href="#harga" class="btn btn-secondary">Lihat Harga</a>
               <a href="#preview" class="btn btn-outline-light">Lihat Preview</a>
             </div>
@@ -1058,6 +1059,244 @@
           <div class="pricing-note-block spec-note">
             Jika sekolah ingin memastikan kesiapan perangkat sebelum instalasi,
             silakan konsultasikan melalui WhatsApp resmi ALPENA.
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="order-nota">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Order &amp; Nota</span>
+            <h2>Buat order sekolah dan terbitkan nota/kwitansi pembayaran</h2>
+            <p>
+              Isi data sekolah dan pemesan. Setelah tersimpan, sistem akan
+              membuat nomor dokumen dan menyiapkan halaman detail serta PDF
+              nota yang bisa langsung dibuka.
+            </p>
+          </div>
+
+          <div class="order-card">
+            <div class="order-intro">
+              <div class="order-intro-badge">Form Publik</div>
+              <h3>Data minimum untuk menerbitkan nota</h3>
+              <ul class="order-intro-list">
+                <li>&#10003; NPSN dan identitas sekolah</li>
+                <li>&#10003; Nama kepala sekolah dan operator/pemesan</li>
+                <li>&#10003; Nominal pembayaran yang akan ditagihkan</li>
+                <li>&#10003; Hasil akhir berupa halaman order dan PDF kwitansi</li>
+              </ul>
+              <div class="order-intro-note">
+                Jika landing page dipublish di domain yang berbeda, endpoint
+                backend PHP cukup diarahkan ke URL ALPENA Pro yang menjalankan
+                modul nota publik.
+              </div>
+            </div>
+
+            <div class="order-form-panel">
+              <form id="orderNotaForm" class="order-form" novalidate>
+                <div class="order-grid">
+                  <div class="order-field">
+                    <label for="payment_type">Jenis Pembayaran</label>
+                    <select id="payment_type" name="payment_type" required>
+                      <option value="initial">Biaya Hak Penggunaan Awal</option>
+                      <option value="renewal">Biaya Aktivasi Ulang</option>
+                    </select>
+                    <small class="field-error" data-error-for="payment_type"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="price_amount">Nominal Pembayaran</label>
+                    <input
+                      id="price_amount"
+                      name="price_amount"
+                      type="text"
+                      inputmode="numeric"
+                      placeholder="Contoh: 3500000"
+                      required
+                    />
+                    <small class="field-error" data-error-for="price_amount"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="npsn">NPSN</label>
+                    <input
+                      id="npsn"
+                      name="npsn"
+                      type="text"
+                      placeholder="Masukkan NPSN sekolah"
+                      required
+                    />
+                    <small class="field-error" data-error-for="npsn"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="budget_year">Tahun Anggaran</label>
+                    <input
+                      id="budget_year"
+                      name="budget_year"
+                      type="text"
+                      placeholder="Contoh: 2026"
+                      required
+                    />
+                    <small class="field-error" data-error-for="budget_year"></small>
+                  </div>
+
+                  <div class="order-field order-field-full">
+                    <label for="school_name">Nama Sekolah</label>
+                    <input
+                      id="school_name"
+                      name="school_name"
+                      type="text"
+                      placeholder="Masukkan nama sekolah"
+                      required
+                    />
+                    <small class="field-error" data-error-for="school_name"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="school_email">Email Sekolah</label>
+                    <input
+                      id="school_email"
+                      name="school_email"
+                      type="email"
+                      placeholder="opsional@sekolah.sch.id"
+                    />
+                    <small class="field-error" data-error-for="school_email"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="operator_email">Email Operator</label>
+                    <input
+                      id="operator_email"
+                      name="operator_email"
+                      type="email"
+                      placeholder="opsional@email.com"
+                    />
+                    <small class="field-error" data-error-for="operator_email"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="school_district">Kecamatan</label>
+                    <input
+                      id="school_district"
+                      name="school_district"
+                      type="text"
+                      placeholder="Masukkan kecamatan"
+                      required
+                    />
+                    <small class="field-error" data-error-for="school_district"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="school_regency">Kabupaten</label>
+                    <input
+                      id="school_regency"
+                      name="school_regency"
+                      type="text"
+                      placeholder="Masukkan kabupaten"
+                      required
+                    />
+                    <small class="field-error" data-error-for="school_regency"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="principal_name">Nama Kepala Sekolah</label>
+                    <input
+                      id="principal_name"
+                      name="principal_name"
+                      type="text"
+                      placeholder="Masukkan nama kepala sekolah"
+                      required
+                    />
+                    <small class="field-error" data-error-for="principal_name"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="principal_nip">NIP Kepala Sekolah</label>
+                    <input
+                      id="principal_nip"
+                      name="principal_nip"
+                      type="text"
+                      placeholder="Opsional"
+                    />
+                    <small class="field-error" data-error-for="principal_nip"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="operator_name">Nama Operator / Pemesan</label>
+                    <input
+                      id="operator_name"
+                      name="operator_name"
+                      type="text"
+                      placeholder="Masukkan nama operator"
+                      required
+                    />
+                    <small class="field-error" data-error-for="operator_name"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="operator_whatsapp">WhatsApp Operator</label>
+                    <input
+                      id="operator_whatsapp"
+                      name="operator_whatsapp"
+                      type="text"
+                      placeholder="08xxxxxxxxxx"
+                      required
+                    />
+                    <small class="field-error" data-error-for="operator_whatsapp"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="operator_nip">NIP Operator</label>
+                    <input
+                      id="operator_nip"
+                      name="operator_nip"
+                      type="text"
+                      placeholder="Opsional"
+                    />
+                    <small class="field-error" data-error-for="operator_nip"></small>
+                  </div>
+
+                  <div class="order-field">
+                    <label for="payment_method">Metode Pembayaran</label>
+                    <input
+                      id="payment_method"
+                      name="payment_method"
+                      type="text"
+                      value="Transfer"
+                      readonly
+                    />
+                  </div>
+                </div>
+
+                <div class="order-form-actions">
+                  <button type="submit" class="btn btn-primary btn-lg" id="orderSubmitButton">
+                    Buat Order &amp; Nota
+                  </button>
+                  <a href="#download" class="btn btn-outline btn-lg">Lanjut ke Download Demo</a>
+                </div>
+
+                <p class="order-helper-text" id="orderHelperText">
+                  Form ini akan mengirim data ke endpoint modul nota publik ALPENA.
+                </p>
+              </form>
+
+              <div id="orderResult" class="order-result" hidden>
+                <div class="order-result-badge">Order Berhasil</div>
+                <h3 id="orderResultTitle">Nota berhasil dibuat</h3>
+                <p id="orderResultText"></p>
+                <div class="order-result-links">
+                  <a id="orderDetailLink" href="#" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                    Buka Detail Order
+                  </a>
+                  <a id="orderPdfLink" href="#" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+                    Unduh PDF Kwitansi
+                  </a>
+                </div>
+              </div>
+
+              <div id="orderErrorBox" class="order-error-box" hidden></div>
+            </div>
           </div>
         </div>
       </section>
